@@ -1,0 +1,87 @@
+.main-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 390px;
+  height: 380px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.main-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  padding-left: 37%;
+  position: absolute;
+}
+
+.divide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  flex-grow: 1;
+}
+
+.left-main-image {
+  margin-left: 80px;
+}
+
+.custom-shape-divider-top-1681094865 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1681094865 svg {
+  position: relative;
+  display: block;
+  width: calc(172% + 1.3px);
+  height: 175px;
+}
+
+.custom-shape-divider-top-1681094865 .shape-fill {
+  fill: #ffffff;
+}
+
+.main-icon {
+  height: 70px;
+  width: 66px;
+  margin-top: 10px;
+}
+
+span {
+  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  margin-left: 10px;
+  font-weight: bolder;
+}

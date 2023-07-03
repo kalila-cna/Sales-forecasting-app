@@ -1,0 +1,94 @@
+<body>
+<div class="custom-shape-divider-top-1681140052">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  </svg>
+</div>
+
+<div class="top-left">
+  <img src="assets\img\logo.png" alt="sales-forecast-icon" class="main-icon">
+  <span class="main-heading">SALES FORECAST.</span>
+</div>
+
+
+<div class="full-page">
+  <div class="divide">
+    
+    <div>
+      <mat-card class="left-card">
+        <mat-card-header>
+          <div style="text-align: center ;margin-bottom: 5px;">
+            <div>
+              <mat-card-title>Forecast Graph - Laptop Sales</mat-card-title>
+              <h2>Predicted for {{duration}} {{period}}(s)..</h2>
+            </div>
+            
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <div>
+            <img src="assets\Predictions\forecast.png" class="forecast-image">
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          
+        </mat-card-actions>
+      </mat-card> 
+    </div>
+
+
+    <div class="main-div">
+      <mat-card class="card">
+        <mat-card-header>
+          <div style="text-align: center ;">
+            <mat-card-title class="title" >Forecast Metrics</mat-card-title>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+
+            <ol type="I"style="margin-right: 50px;">
+              <li><h3>Mean Absolute Percentage Error : <b>{{ mape }}%</b></h3></li>
+              <li><h3>Mean Absolute Error : <b>{{ mae }}</b></h3></li>
+              <li><h3>Root Mean Square Error : <b>{{ rmse }}</b></h3></li>
+              <li><h3>Mean Squared Error : <b>{{ mse }}</b></h3></li>
+            </ol>
+          
+            <hr>
+       
+        </mat-card-content>
+        <mat-card-actions>
+          <a href="assets\file\forecast.csv"><h3>Download Predicted .csv file</h3> </a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    
+  
+  </div>
+  
+  
+  <div style="margin-left: 70px;">
+    <mat-card class="bottom-card">
+      <mat-card-header>
+        <div style="text-align: center ;margin-top: 50%;margin-bottom: 20px;">
+          <mat-card-title class="title">Prediction vs Actual</mat-card-title>
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <div style="margin-bottom: 50px;">
+          <img src="assets\Predictions\prediction_vs_actual.png" class="actual_vs_predicted">
+        </div>
+      </mat-card-content>
+
+      <mat-card-actions>
+        
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</div>
+
+</body>
+
+
+
+

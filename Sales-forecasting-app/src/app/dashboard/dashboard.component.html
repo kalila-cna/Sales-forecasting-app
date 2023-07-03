@@ -1,0 +1,86 @@
+<div class="custom-shape-divider-top-1681140052">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  </svg>
+</div>
+
+<div class="top-left">
+  <img src="assets\img\logo.png" alt="sales-forecast-icon" class="main-icon">
+  <span>SALES FORECAST.</span>
+</div>
+
+<div>
+  <mat-card class="info-card">
+    <mat-card-header>
+      <div style="text-align: center;">
+        <mat-card-title class="title">Features..</mat-card-title>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <h3>Predict the sales record based on Yearly, Monthly, Weekly or Daily-basis. It processes the data and provides the prediction accurately !</h3>    
+    </mat-card-content>
+    
+  </mat-card>
+
+</div>
+
+<div class="divide">
+  <div class="left-image">
+    <img src="assets\img\dashboard-page-pic.png" class="dasboard-image">
+  </div>
+  <div class="main-div">
+  
+    <mat-card class="card">
+
+
+      <mat-card-content >
+        <p class="heading">Get Forecast of your Business !</p>
+        <div class="uploadFileDiv" [formGroup]="predictForm">
+          <div>
+            <p style="padding-bottom: 6px;">Upload .csv or .xlsx file</p>
+            <input required type="file" (change)="getFile($event)" name="file" formControlName="file"/>
+          </div>
+        </div>
+
+        <div style="padding-top: 20px;">
+        <mat-form-field appearance="outline">
+          <mat-icon matPrefix>calendar_month</mat-icon>
+          <mat-label>Periodicity</mat-label>
+          <mat-select [(ngModel)]="periodicity" >
+            <mat-option value="year"> Year </mat-option>
+            <mat-option value="month">Month</mat-option>
+            <mat-option value="week">Week</mat-option>
+            <mat-option value="day">Day</mat-option>
+          </mat-select>
+        </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-icon matPrefix>timeline</mat-icon>
+            <mat-label>Duration</mat-label>
+            <input matInput type="number" min="0" [(ngModel)]="duration">
+          </mat-form-field>
+        </div>
+    
+      </mat-card-content>
+
+      <mat-card-actions>
+          <div>
+            <button mat-raised-button color="primary" (click)="getprediction()">Get Forecast</button>
+          </div>
+      </mat-card-actions>
+      <div *ngIf="loading" style="width: 250px;margin-top: 20px;">
+        <mat-progress-bar mode="indeterminate" color="accent"></mat-progress-bar>
+        <br>
+        <p class="heading">Prediciting your dataset...</p>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+  
+
+
+  
+  
