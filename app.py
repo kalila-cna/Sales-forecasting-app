@@ -15,7 +15,7 @@ import matplotlib
 matplotlib.use('Agg')
 from flask_pymongo import pymongo
 
-mongodb_url="mongodb+srv://cnakalila:kalilasfa@cluster0.mcv4shq.mongodb.net/?retryWrites=true&w=majority"
+mongodb_url="mongodb_url"
 mongoDB=pymongo.MongoClient(mongodb_url)
 db=mongoDB['sales_forecasting_app']
 login=db.login
